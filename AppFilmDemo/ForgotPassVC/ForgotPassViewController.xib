@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotPassViewController" customModule="AppFilmDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="btnConfirm" destination="wPw-WE-Tzz" id="782-3o-Wya"/>
+                <outlet property="labelEmailForNewPassword" destination="atL-BY-6S1" id="apw-lw-1mU"/>
+                <outlet property="tfEmailForNewPassword" destination="7BT-MU-X9M" id="uHF-Tr-LXI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atL-BY-6S1">
+                    <rect key="frame" x="25" y="72" width="42" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Juz-yt-m2Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-MU-X9M">
+                    <rect key="frame" x="25" y="117" width="340" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="yj7-3j-k68"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPw-WE-Tzz">
+                    <rect key="frame" x="157.66666666666666" y="172" width="75" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                    <connections>
+                        <action selector="toChangePasswordVC:" destination="-1" eventType="touchUpInside" id="UXV-3E-Onx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wPw-WE-Tzz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6pp-GE-KKd"/>
+                <constraint firstItem="7BT-MU-X9M" firstAttribute="top" secondItem="atL-BY-6S1" secondAttribute="bottom" constant="10" id="DWA-Zp-sB2"/>
+                <constraint firstItem="atL-BY-6S1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="PbF-2D-KLM"/>
+                <constraint firstItem="atL-BY-6S1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="ata-aR-S0Q"/>
+                <constraint firstItem="7BT-MU-X9M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="t07-Iu-M8j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7BT-MU-X9M" secondAttribute="trailing" constant="25" id="xhz-f6-BF6"/>
+                <constraint firstItem="wPw-WE-Tzz" firstAttribute="top" secondItem="7BT-MU-X9M" secondAttribute="bottom" constant="20" id="yMS-hT-2eC"/>
+            </constraints>
+            <point key="canvasLocation" x="45" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

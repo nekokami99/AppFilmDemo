@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeInforViewController" customModule="AppFilmDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="btnConfirmChange" destination="C1y-XB-30e" id="Yg0-7T-0bV"/>
+                <outlet property="labelEmail" destination="Bmc-Hk-3xR" id="Law-2G-lCc"/>
+                <outlet property="labelFullname" destination="eul-we-KCm" id="yjk-cs-eX5"/>
+                <outlet property="labelUsername" destination="HQB-fT-tmt" id="MYl-iV-sSd"/>
+                <outlet property="tfChangeEmail" destination="WRf-f0-ndl" id="xUC-tl-C6a"/>
+                <outlet property="tfChangeFullname" destination="PQj-ab-CW0" id="lbv-VI-Gh4"/>
+                <outlet property="tfChangeUsername" destination="nmr-mh-rW5" id="3Sh-ag-ARV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eul-we-KCm" userLabel="new name">
+                    <rect key="frame" x="25" y="72" width="42" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="cmR-bH-9e9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cmR-bH-9e9"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="cmR-bH-9e9"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQB-fT-tmt" userLabel="new username">
+                    <rect key="frame" x="25" y="157" width="42" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="tLA-ei-jP3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="tLA-ei-jP3"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="tLA-ei-jP3"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmr-mh-rW5" userLabel="change username">
+                    <rect key="frame" x="25" y="192" width="340" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="K0i-Bv-hB0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="K0i-Bv-hB0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="K0i-Bv-hB0"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQj-ab-CW0" userLabel="change name">
+                    <rect key="frame" x="25" y="107" width="340" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="e89-Uy-Reo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="e89-Uy-Reo"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="e89-Uy-Reo"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-Hk-3xR" userLabel="new email">
+                    <rect key="frame" x="25" y="237" width="42" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Hnb-aF-mRF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Hnb-aF-mRF"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Hnb-aF-mRF"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRf-f0-ndl" userLabel="change email">
+                    <rect key="frame" x="25" y="272" width="340" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="fXV-wW-1iX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fXV-wW-1iX"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="fXV-wW-1iX"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1y-XB-30e" userLabel="confirm">
+                    <rect key="frame" x="157.66666666666666" y="327" width="75" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                    <connections>
+                        <action selector="confirmUpdateUser:" destination="-1" eventType="touchUpInside" id="kMh-Tl-eC5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="C1y-XB-30e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1De-R0-LqD"/>
+                <constraint firstItem="WRf-f0-ndl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="2Ex-h7-uoK"/>
+                <constraint firstItem="HQB-fT-tmt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="5pq-bo-6Eh"/>
+                <constraint firstItem="PQj-ab-CW0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="AMq-IR-6Pm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PQj-ab-CW0" secondAttribute="trailing" constant="25" id="HWE-A1-gNp"/>
+                <constraint firstItem="HQB-fT-tmt" firstAttribute="top" secondItem="PQj-ab-CW0" secondAttribute="bottom" constant="15" id="HtT-7m-5r2"/>
+                <constraint firstItem="eul-we-KCm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IzZ-dg-cvd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nmr-mh-rW5" secondAttribute="trailing" constant="25" id="K0X-MZ-ocM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WRf-f0-ndl" secondAttribute="trailing" constant="25" id="Pbc-Of-VKf"/>
+                <constraint firstItem="eul-we-KCm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="SMh-Bt-47A"/>
+                <constraint firstItem="WRf-f0-ndl" firstAttribute="top" secondItem="Bmc-Hk-3xR" secondAttribute="bottom" constant="10" id="T8Q-1o-7FK"/>
+                <constraint firstItem="eul-we-KCm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="fsP-A3-DpZ"/>
+                <constraint firstItem="PQj-ab-CW0" firstAttribute="top" secondItem="eul-we-KCm" secondAttribute="bottom" constant="10" id="fss-Yy-QZE"/>
+                <constraint firstItem="HQB-fT-tmt" firstAttribute="top" secondItem="PQj-ab-CW0" secondAttribute="bottom" constant="10" id="h56-Nv-Ech"/>
+                <constraint firstItem="Bmc-Hk-3xR" firstAttribute="top" secondItem="nmr-mh-rW5" secondAttribute="bottom" constant="10" id="hke-w0-ser"/>
+                <constraint firstItem="nmr-mh-rW5" firstAttribute="top" secondItem="HQB-fT-tmt" secondAttribute="bottom" constant="10" id="iAL-GD-C7g"/>
+                <constraint firstItem="C1y-XB-30e" firstAttribute="top" secondItem="WRf-f0-ndl" secondAttribute="bottom" constant="20" id="lbl-dA-MSc"/>
+                <constraint firstItem="nmr-mh-rW5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="mm4-Ni-vJ9"/>
+                <constraint firstItem="C1y-XB-30e" firstAttribute="top" secondItem="WRf-f0-ndl" secondAttribute="bottom" constant="10" id="tqe-3G-cgR"/>
+                <constraint firstItem="Bmc-Hk-3xR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="wHy-Sl-GWl"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="IzZ-dg-cvd"/>
+                    <exclude reference="SMh-Bt-47A"/>
+                    <exclude reference="HtT-7m-5r2"/>
+                    <exclude reference="h56-Nv-Ech"/>
+                    <exclude reference="lbl-dA-MSc"/>
+                    <exclude reference="tqe-3G-cgR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="IzZ-dg-cvd"/>
+                    <include reference="h56-Nv-Ech"/>
+                    <include reference="tqe-3G-cgR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="SMh-Bt-47A"/>
+                    <include reference="HtT-7m-5r2"/>
+                    <include reference="lbl-dA-MSc"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="36.255924170616112" y="-13.846153846153845"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
